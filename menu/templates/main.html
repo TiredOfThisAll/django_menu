@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% load static %}
+{% load menu_tags %}
+{% block content %}
+    {% draw_menu menu_name request %}
+    {% csrf_token %}
+{% endblock content %}
